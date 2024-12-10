@@ -8,8 +8,8 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        Company customer = new Company();
-        return View(customer);
+        Company company = new Company();
+        return View(company);
     }
 
     [HttpPost]

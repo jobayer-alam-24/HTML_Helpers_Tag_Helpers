@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj": {}
+    "c:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj": {
+    "c:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj",
+        "projectUniqueName": "c:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj",
         "projectName": "Radiobutton_Implement",
-        "projectPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj",
+        "projectPath": "c:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj",
         "packagesPath": "C:\\Users\\JOBAYER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\obj\\",
+        "outputPath": "c:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JOBAYER\\AppData\\Roaming\\NuGet\\NuGet.Config"
