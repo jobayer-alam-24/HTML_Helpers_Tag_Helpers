@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DropdownList_Implement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df8080ca7c3dc91b0365823ee65753a419923365")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d10523841217042b951383ad4ef87a89d1d9a2d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DropdownList_Implement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DropdownList_Implement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

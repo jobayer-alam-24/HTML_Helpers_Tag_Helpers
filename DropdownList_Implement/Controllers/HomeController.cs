@@ -1,7 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DropdownList_Implement.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DropdownList_Implement.Controllers;
 
@@ -9,13 +8,13 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        List<Department> Departments = new List<Department>()
+        List<Department> ListOfDepartments = new List<Department>()
         {
-            new Department {Id = 1, Name = "IT"},
-            new Department {Id = 2, Name = "HR"},
-            new Department {Id = 3, Name = "Payroll"}
+            new Department() {Id = 1, Name = "IT"},
+            new Department() {Id = 2, Name = "HR"},
+            new Department() {Id = 3, Name = "Payroll"}
         };
-        ViewBag.Departments = new SelectList(Departments, "Id", "Name");
+        ViewBag.Departments = ListOfDepartments;
 
         Employee emp = new Employee(){
             EmployeeId = 1,
