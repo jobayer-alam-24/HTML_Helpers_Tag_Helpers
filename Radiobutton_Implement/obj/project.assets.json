@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\Html_Helper_Dropdown_Radiobutton_Checkbox_Listbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj",
+      "projectUniqueName": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj",
       "projectName": "Radiobutton_Implement",
-      "projectPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\Html_Helper_Dropdown_Radiobutton_Checkbox_Listbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj",
+      "projectPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\Radiobutton_Implement.csproj",
       "packagesPath": "C:\\Users\\JOBAYER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\Html_Helper_Dropdown_Radiobutton_Checkbox_Listbox\\Radiobutton_Implement\\obj\\",
+      "outputPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Radiobutton_Implement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JOBAYER\\AppData\\Roaming\\NuGet\\NuGet.Config"

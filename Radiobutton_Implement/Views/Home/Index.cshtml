@@ -1,8 +1,35 @@
-﻿@{
+﻿@using Radiobutton_Implement.Models;
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="form-group">
+    <label for="male" class="form-check-label">
+        @Html.RadioButton("Gender", "Male", false, new { @class = "form-check-input", id = "male" }) Male
+    </label>
 </div>
+<div class="form-group">
+    <div for="female" class="form-check-label">
+        @Html.RadioButton("Gender", "Female", true, new { @class = "form-check-input", id = "female" }) Female
+    </div>
+</div>
+@using (@Html.BeginForm())
+{
+    <div class="form-group">
+        @foreach (var department in Model.Departments())
+        {
+            <div class="form-check">
+                <label class="form-check-label">
+                    //Error
+                    @* @Html.RadioButtonFor(m => m.SelectedDepartment, department.Id, new { @class = "form-check-input" })
+                    @department.Name *@
+                </label>
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-primary" />
+    </div>
+
+}

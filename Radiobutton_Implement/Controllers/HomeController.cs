@@ -1,21 +1,28 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Radiobutton_Implement.Models;
-
 namespace Radiobutton_Implement.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
-
+    [HttpGet]
     public IActionResult Index()
     {
-        return View();
+        Company customer = new Company();
+        return View(customer);
+    }
+
+    [HttpPost]
+    public string Index(Company company)
+    {
+        if(company.SelectedDepartment <= 0)
+        {
+            return "You did not select any department";
+        }
+        else
+        {
+            return "You have selected: " + company.SelectedDepartment;
+        }
     }
 
     public IActionResult Privacy()
