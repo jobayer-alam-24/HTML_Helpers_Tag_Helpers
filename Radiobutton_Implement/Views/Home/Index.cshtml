@@ -1,7 +1,9 @@
 ﻿@using System.Diagnostics;
 @using Radiobutton_Implement.Models;
 @using Microsoft.AspNetCore.Mvc;
+@model Company
 @{
+ 
     ViewData["Title"] = "Home Page";
 }
 
@@ -18,11 +20,11 @@
 @using (@Html.BeginForm())
 {
     <div class="form-group">
-        @foreach (var department in Model.Departments())
+        @foreach (var department in Model.ListOfDepartments())
         {
             <div class="form-check">
                 <label class="form-check-label">
-                    @Html.RadioButtonFor(m => m.SelectedDepartment, department.Id, new { @class = "form-check-input" })
+                     @Html.RadioButtonFor(model => model.SelectedDepartment, department.Id, new { @class = "form-check-input" })
                     @department.Name
                 </label>
             </div>
