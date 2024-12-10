@@ -1,0 +1,28 @@
+﻿@using DropdownList_Implement.Enums
+@using DropdownList_Implement.Models
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="form-group">
+    <label for="Departments" class="form-label">Select Departments</label>
+    @Html.DropDownList("Departments", @ViewBag.Departments, "--Select Department--", new { @class = "form-control" })
+</div>
+<div class="form-group">
+    <!-- Way-1: Manually creating SelectListItems from Enum -->
+    <label for="Gender" class="form-label">Select Gender</label>
+    @Html.DropDownList("Gender", new SelectList(Enum.GetValues(typeof(Gender)).
+    Cast<Gender>().Select(e => new
+        SelectListItem{Text = e.ToString(),Value = ((int)e).ToString()}),"Value", "Text"),
+        "Select Gender",
+        new { @class = "form-control" })
+
+    // **Problem **
+ <!-- Way-2: Using DropDownListFor with strongly typed model binding -->
+    <label for="Gender" class="form-label">Select Gender</label>
+    
+    @* @Html.DropDownListFor(m => m.Gender, new SelectList(Enum.GetValues(typeof(Gender)))); *@
+   
+   
+
+</div>
