@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Radiobutton_Implement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e0edb937813b4993fb7deb718a724edd66b4f39")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74c69ab7254dbb2fbe8e761f55453afe6ade74fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Radiobutton_Implement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Radiobutton_Implement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
