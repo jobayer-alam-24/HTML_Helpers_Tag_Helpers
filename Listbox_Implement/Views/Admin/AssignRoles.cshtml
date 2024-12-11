@@ -1,0 +1,19 @@
+@model UserRoleViewModel;
+@{
+    ViewData["Title"] = "AssignRoles"; 
+}
+<h2>Assign Roles to @Model.UserName</h2>
+<form asp_action="AssignRoles" asp-controller="Admin" method="post">
+    <div class="form-group">
+        <label for="Roles">Select Roles</label>
+        @Html.ListBoxFor(m => m.SelectedRoleIds, new MultiSelectList(Model.AvailableRoles, "RoleId", "RoleName"), new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-primary">Assign Roles</button>
+</form> 
+
+@if(ViewBag.Message != null)
+{
+    <div class="alert alert-info">
+        @ViewBag.Message
+    </div>
+}
