@@ -23,5 +23,14 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "login",
+    pattern: "{controller=Account}/{action=Login}/{id?}");
+app.MapControllerRoute(
+    name: "selectlanguages",
+    pattern: "{controller=Language}/{action=SelectLanguages}/{id?}");
+app.MapControllerRoute(
+    name: "selectlanguages",
+    pattern: "{controller=Language}/{action=SubmitLanguages}/{id?}");
 
 app.Run();

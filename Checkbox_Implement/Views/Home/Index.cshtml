@@ -1,4 +1,48 @@
-﻿@{
+﻿@model SecuritySettingsViewModel;
+@{
     ViewData["Title"] = "Home Page";
 }
 
+<h2>Update Profile Page</h2>
+<form asp-action="UpdateProfile" asp-controller="Home" method="post">
+    <div class="form-check">
+        @Html.CheckBox("SubscribeToNewsletter", false, new {@class = "form-check-input"})
+        <label for="SubscribeToNewsletter" class="form-check-label">Subscribe to newsletter</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+<h2>Registration Page</h2>
+<form asp-action="Register" asp-controller="Home" method="post">
+    <div class="form-check">
+        @Html.CheckBox("AcceptTerms", false, new {@class = "form-check-input", id = "AcceptTerms"})
+        <label for="AcceptTerms" class="form-check-label"> I accept the terms and conditions</label>
+    </div>
+    <button type="submit" class="btn btn-primary submit-btn" disabled>Register</button>
+</form>
+
+<h2>Enable/Disable Two Factor Authentication</h2>
+<form asp-action="UpdateSecuritySettings" asp-controller="Home" method="post">
+    <div class="form-check">
+        @Html.CheckBoxFor(model => model.EnableTwoFactorAuth, new {@class = "form-check-input"})
+        <label for="EnableTwoFactorAuth" class="form-check-label">
+            Enable Two-Factor Authentication
+        </label> 
+    </div>
+    <button type="submit" class="btn btn-primary">Save Settings</button>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        $("#AcceptTerms").on("click", function(){
+            if($(this).is(':checked')){
+                $(".submit-btn").removeAttr("disabled");
+            }
+            else
+            {
+                $(".submit-btn").attr("disabled", "disabled");
+            }
+        })
+    })
+</script>

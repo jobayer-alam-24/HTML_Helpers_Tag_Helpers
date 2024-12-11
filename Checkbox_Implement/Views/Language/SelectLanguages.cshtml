@@ -1,0 +1,17 @@
+@model ProgrammingLanguagesViewModel
+@{
+    ViewData["Title"] = "SelectLanguages";
+}
+<h2>Select Your Preferred Programming Languages</h2>
+<form asp-action="SubmitLanguages" asp-controller="Language" method="post">
+    @for (int i = 0; i < Model.LanguageOptions.Count; i++)
+    {
+
+        <div class="form-group">
+            @Html.CheckBoxFor(m => m.LanguageOptions[i].IsSelected)
+            <label>@Model.LanguageOptions[i].LanguageName</label>
+            @Html.HiddenFor(m => m.LanguageOptions[i].LanguageName)
+        </div>
+    }
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -18,12 +18,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\JOBAYER\OneDrive\Tài liệu\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\Checkbox_Implement
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/JOBAYER/OneDrive/Tài liệu/HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox/Checkbox_Implement/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/JOBAYER/OneDrive/Tài liệu/HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox/Checkbox_Implement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JOBAYER/OneDrive/Tài liệu/HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox/Checkbox_Implement/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOBAYER/OneDrive/Tài liệu/HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox/Checkbox_Implement/Views/Language/SelectedLanguages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZ3VhZ2VcU2VsZWN0ZWRMYW5ndWFnZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOBAYER/OneDrive/Tài liệu/HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox/Checkbox_Implement/Views/Language/SelectLanguages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZ3VhZ2VcU2VsZWN0TGFuZ3VhZ2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JOBAYER/OneDrive/Tài liệu/HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox/Checkbox_Implement/Views/Shared/Error.cshtml]

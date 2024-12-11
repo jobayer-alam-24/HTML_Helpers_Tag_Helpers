@@ -6,18 +6,48 @@ namespace Checkbox_Implement.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
 
     public IActionResult Index()
     {
+        SecuritySettingsViewModel settings = new SecuritySettingsViewModel()
+        {
+            EnableTwoFactorAuth = false
+        };
         return View();
     }
+    [HttpPost]
+    public string UpdateSecuritySettings(SecuritySettingsViewModel settings)
+    {
+        if(settings.EnableTwoFactorAuth){
+            return "You Enable Two Factor Authentication";
+        }
+        else
+        {
+            return "You Disabled Two Factor Authentication";
+        }
+    }
 
+    [HttpPost]
+    public string UpdateProfile(bool SubscribeToNewsletter){
+        if(SubscribeToNewsletter){
+
+            return "You Subscribed To News Letter";
+        }
+        else
+        {
+            return "You Havenot Subscribe to Newsletter";
+        }
+    }
+    [HttpPost]
+    public string Register(bool AcceptTerms)
+    {
+        if(AcceptTerms){
+            return "You Accept the Terms and Conditions";
+        }
+        else{
+            return "You Havenot Accept the Terms and Conditions";
+        }
+    }
     public IActionResult Privacy()
     {
         return View();

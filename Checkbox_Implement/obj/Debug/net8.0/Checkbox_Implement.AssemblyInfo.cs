@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Checkbox_Implement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e0edb937813b4993fb7deb718a724edd66b4f39")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67ce1922bec669ddf5cbbbc743e8d73df023f7f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Checkbox_Implement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Checkbox_Implement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
