@@ -4,22 +4,30 @@
 
 <div class="form-group">
     <label for="Departments" class="form-label">Select Departments</label>
-    @Html.DropDownList("Departments", ViewBag.Departments, "--Select Department--", new { @class = "form-control" })
+    @Html.DropDownList("Departments", new List<SelectListItem>(){
+        new SelectListItem { Text = "IT", Value = "1", Selected=true},
+        new SelectListItem { Text = "HR", Value = "2"},
+        new SelectListItem { Text = "Payroll", Value = "3"}
+    }, "--Select Department--", new { @class = "form-control mb-2" })
 </div>
 <div class="form-group">
-    <!-- Way-1: Manually creating SelectListItems from Enum -->
+    <label for="Departments" class="form-label">Select Departments</label>
+    @Html.DropDownList("Departments", @ViewBag.Departments2, "--Select Department--", new { @class = "form-control mb-2" })
+</div>
+<div class="form-group">
+    @* Bujhi Nai Cast theke.... *@
     <label for="Gender" class="form-label">Select Gender</label>
-    @* @Html.DropDownList("Gender", new SelectList(Enum.GetValues(typeof(Gender)).
+    @Html.DropDownList("Gender", new SelectList(Enum.GetValues(typeof(Gender)).
     Cast<Gender>().Select(e => new
         SelectListItem{Text = e.ToString(),Value = ((int)e).ToString()}),"Value", "Text"),
         "Select Gender",
-        new { @class = "form-control" }) *@
+        new { @class = "form-control" })
 
- @* <!-- Way-2: Using DropDownListFor with strongly typed model binding --> *@
+    @* Bujhi Nai Cast theke.... *@
+
     <label for="Gender" class="form-label">Select Gender</label>
-    
-    @* @Html.DropDownListFor(m => m.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "Select Gender", new {@class = "form-control"}) *@
-    
+    @Html.DropDownListFor(m => m.Gender, new SelectList(Enum.GetValues(typeof(Gender))), "Select Gender", new {@class = "form-control"})
+     
     <label for="DepartmentID" class="form-label">Select Department</label>
-    @* @Html.DropDownListFor(emp => emp.DepartmentID, new SelectList(ViewBag.Departments, "Id", "Name"), "Select Department", new {@class = "form-control"}) *@
+    @Html.DropDownListFor(emp => emp.DepartmentID, new SelectList(ViewBag.Departments1, "Id", "Name"), "Select Department", new {@class = "form-control"})
 </div>
