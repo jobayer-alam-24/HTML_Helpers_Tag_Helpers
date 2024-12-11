@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Editor_Implement.props" />
+</Project>
