@@ -1,0 +1,46 @@
+@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<h2>Login Page</h2>
+<form asp-action="Login" asp-asp-controller="Account" method="post">
+    <div class="form-group mt-1">
+        @Html.LabelFor(model => model.UserName, "Username", new { @class = "form-label" })
+        @Html.EditorFor(model => model.UserName, new
+            {
+                htmlAttributes = new
+                {
+                    @class = "form-input form-control",
+                    placeholder = "Enter Your Name"
+                }
+            })
+    </div>
+    <div class="form-group mt-1">
+        @Html.LabelFor(model => model.Password, "Password", new {@class = "form-label"})
+        @Html.PasswordFor(model => model.Password, new {@class = "form-control form-input password-input", placeholder = "Enter your Credentials"})
+        <p>
+            <button type="button" class="btn btn-success mt-2 show-btn">Show</button>
+        </p>
+    </div>
+    <div class="form-group mt-1">
+        <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    let show_btn = $(".show-btn");
+    let passwordField = $(".password-input");
+    show_btn.on("click", function(){
+        let passType = passwordField.attr("type");
+        if(passType == "password")
+        {
+            passwordField.attr("type", "text");
+            $(this).text("Hide");
+        }
+        else
+        {
+            passwordField.attr("type", "password");
+            $(this).text("Show");
+        }
+    })
+</script>
