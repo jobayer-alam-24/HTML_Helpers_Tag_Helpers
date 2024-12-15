@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Hidden_Implement.props" />
+</Project>

@@ -1,0 +1,26 @@
+@model Student;
+@{
+    ViewData["Title"] = "Edit";
+}
+<form asp-action="Edit" asp-controller="Student" method="post" class="form-horizontal">
+    @* @Html.Hidden("Id", Model.Id) *@
+    @Html.HiddenFor(m => m.Id)
+    
+    <div class="form-group mt-1">
+        <label for="Name" class="control-label col-md-2">Name</label>
+        <div class="col-md-10">
+            @Html.TextBox("Name", Model.Name, new { @class = "form-control", placeholder = "Enter Your Name" })
+        </div>
+    </div>
+    <div class="form-group mt-1">
+        <label for="Branch" class="control-label col-md-2">Branch</label>
+        <div class="col-md-10">
+           @Html.TextBox("Branch", Model.Branch, new {@class = "form-control", placeholder = "Enter Your Branch"})
+        </div>
+    </div>
+    <div class="form-group mt-1">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+    </div>
+</form>    
