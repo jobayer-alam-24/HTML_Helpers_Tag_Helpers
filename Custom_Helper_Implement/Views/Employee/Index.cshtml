@@ -1,0 +1,17 @@
+@using Custom_Helper_Implement.Helpers
+@model Employee
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card shadow-sm p-2 mb-2">
+                <p>Id: @Model.Id</p>
+                <img src="@Model.Photo" alt="@Model.AlternateText">
+                <p>Photo Source: <b>@Model.Photo</b></p>
+            </div>
+            <div class="card shadow-sm p-2">
+                @Html.Image(@Model.Photo, @Model.AlternateText, new {@class = "img-thumbnail"})
+            </div>
+        </div>
+    </div>
+</div>    
