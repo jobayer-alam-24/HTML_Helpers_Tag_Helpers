@@ -16,6 +16,7 @@ namespace Custom_Helper_Implement.Controllers
         {
             Employee employee = new Employee(){
                 Id = 1,
+                Name = "Rahim",
                 Photo = "../images/baby.jpg",
                 AlternateText = "A cute Baby's Picture"
             };

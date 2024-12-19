@@ -6,6 +6,7 @@
         <div class="col-lg-6">
             <div class="card shadow-sm p-2 mb-2">
                 <p>Id: @Model.Id</p>
+                @Html.CustomInputWithValidation("Name", "Enter Your Name: ")
                 <img src="@Model.Photo" alt="@Model.AlternateText">
                 <p>Photo Source: <b>@Model.Photo</b></p>
             </div>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Custom_Helper_Implement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1c0ddaa4baff6a4f1bb56e74d78a35ca2459c78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbb4ff1e147af708d6b9f10e87a8566694c87583")]
 [assembly: System.Reflection.AssemblyProductAttribute("Custom_Helper_Implement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Custom_Helper_Implement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
