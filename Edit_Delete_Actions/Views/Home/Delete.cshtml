@@ -1,0 +1,29 @@
+@model Student 
+@{
+    ViewData["Title"] = "Edit Student";
+    var Student = Model; 
+}
+<div class="container mt-5 d-flex justify-content-center flex-wrap">
+    <div class="card mb-2 me-2 text-center shadow-sm" style="width: 18rem;">
+        <div class="card-body">
+            @Html.HiddenFor(model => Student.Id)
+            <img asp-append-version="true" src="@Url.Content("~/" + Student.Image)" alt="baby image" width="100" height="100" class="circle thumbnail">
+            <h5 class="card-title">@Student.Name</h5>
+            <p class="card-text">Age: @Student.Age</p>
+            <a class="btn btn-danger del">Delete</a>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(function(){
+        let delBtn = $(".del");
+        delBtn.on('click', function(){
+            if(confirm("Are you sure you want to delete this student?"))
+            {
+                $(".card").remove();
+            }  
+        })
+    })
+</script>

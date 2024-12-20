@@ -1,0 +1,16 @@
+@model Student 
+@{
+    ViewData["Title"] = "Edit Student";
+    var Student = Model; 
+}
+<div class="container mt-5 d-flex justify-content-center flex-wrap">
+    <div class="card mb-2 me-2 text-center shadow-sm" style="width: 18rem;">
+        <div class="card-body">
+            @Html.HiddenFor(model => Student.Id)
+            <img asp-append-version="true" src="@Url.Content("~/" + Student.Image)" alt="baby image" width="100" height="100" class="circle thumbnail">
+            <h5 class="card-title">@Student.Name</h5>
+            <p class="card-text">Age: @Student.Age</p>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Back</a>
+        </div>
+    </div>
+</div>
