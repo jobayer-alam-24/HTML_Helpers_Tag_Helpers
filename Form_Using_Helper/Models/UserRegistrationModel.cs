@@ -35,4 +35,11 @@ namespace Form_Using_Helper.Models
         public List<string> Skills { get; set; }
         public Guid HiddenField { get; set; }
     }
+    public enum Courses { 
+        CSharp,
+        AspDotNet,
+        Angular,
+        React,
+        VueJs
+    }
 }

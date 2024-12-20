@@ -1,0 +1,8 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Welcome to Our Product Store</h2>
+<p>Find the best products at great prices.</p>
+<partial name="~/Views/Shared/_ProductListPartial.cshtml" model="@Model"/>

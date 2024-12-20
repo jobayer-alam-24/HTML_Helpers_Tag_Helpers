@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Form_Using_Helper\\Form_Using_Helper.csproj",
+      "projectUniqueName": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_Helpers_Tag_Helpers\\Form_Using_Helper\\Form_Using_Helper.csproj",
       "projectName": "Form_Using_Helper",
-      "projectPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Form_Using_Helper\\Form_Using_Helper.csproj",
+      "projectPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_Helpers_Tag_Helpers\\Form_Using_Helper\\Form_Using_Helper.csproj",
       "packagesPath": "C:\\Users\\JOBAYER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_HELPER_Dropdown_Listbox_Radiobutton_Checkbox\\Form_Using_Helper\\obj\\",
+      "outputPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\HTML_Helpers_Tag_Helpers\\Form_Using_Helper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JOBAYER\\AppData\\Roaming\\NuGet\\NuGet.Config"

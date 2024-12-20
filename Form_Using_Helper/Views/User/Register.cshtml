@@ -53,16 +53,19 @@
         </div>
         <div class="row mb-3">
             <div class="col-md-2 d-flex align-items-center">
-                @Html.LabelFor(m => m.SelectedCourse, new { @class = "form-label me-2" })
+                @Html.LabelFor(m => m.SelectedCourse, "Select Course", new { @class = "form-label me-2" })
             </div>
             <div class="col-md-7">
-               @Html.DropDownListFor(m => m.SelectedCourse, new SelectList(Model.Courses), "==Select A Course==", new { @class = "form-control" })
+               @* @Html.DropDownListFor(m => m.SelectedCourse, new SelectList(Model.Courses), "==Select A Course==", new { @class = "form-control" }) *@
+                <select asp-items="@Html.GetEnumSelectList<Courses>()" name="SelectedCourse" id="SelectedCourse" class="form-control">
+                    <option value="">==Select A Course==</option>
+                </select>
                 @Html.ValidationMessageFor(m => m.SelectedCourse, "", new { @class = "text-danger" })
             </div>
         </div>
         <div class="row mb-3">
             <div class="col-md-2 d-flex align-items-center">
-                @Html.LabelFor(m => m.SelectedSkills, new { @class = "form-label me-2" })
+                @Html.LabelFor(m => m.SelectedSkills, "Select Skills", new { @class = "form-label me-2" })
             </div>
             <div class="col-md-7">
                @Html.ListBoxFor(m => m.SelectedSkills, new MultiSelectList(Model.Skills), new { @class = "form-control" })
