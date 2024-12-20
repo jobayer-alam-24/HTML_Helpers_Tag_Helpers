@@ -1,0 +1,94 @@
+@using Form_Tag_Helpers.Enums
+@model Student
+@{
+    ViewData["Title"] = "Student Registration";
+}
+<h2 class="mb-4">Student Registration</h2>
+<form asp-action="Register" asp-controller="Student" method="post" class="form-horizontal">
+    <div class="form-group row mb-3">
+        <label asp-for="Name" class="col-sm-2 col-form-label">Full Name</label>
+        <div class="col-sm-10">
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label asp-for="Password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label asp-for="DateOfBirth" class="col-sm-2 col-form-label">Date of Birth</label>
+        <div class="col-sm-10">
+            <input asp-for="DateOfBirth" value="@Model.DateOfBirth.ToShortDateString()" type="date" class="form-control" />
+            <span class="text-danger" asp-validation-for="DateOfBirth"></span>
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label asp-for="Gender" class="col-sm-2 col-form-label">Gender</label>
+        <div class="col-sm-10">
+            @foreach(var gender in Enum.GetValues(typeof(Gender)))
+            {
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="Male" name="Gender" value="Male" class="form-check-input" />
+                    <label for="Male" class="form-check-label">@gender</label>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label asp-for="Address" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-10">
+            <textarea asp-for="Address" class="form-control"></textarea>
+            <span class="text-danger" asp-validation-for="Address"></span>
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label asp-for="Branch" class="col-sm-2 col-form-label">Branch</label>
+        <div class="col-sm-10">
+            <select asp-for="Branch" asp-items="@Html.GetEnumSelectList<Branch>()" class="form-control">
+                <option value="">--Select Your Branch--</option>
+            </select>
+            <span asp-validation-for="Branch" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label class="col-sm-2 col-form-label">Hobbies</label>
+        <div class="col-sm-10">
+            @foreach(var hobby in ViewBag.Hobbies as List<string>)
+            {
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" name="hobby" id="hobby" value="@hobby" class="form-check-input" />  
+                    @(Model.Hobbies != null && Model.Hobbies.Contains(hobby) ? "checked" : "")
+                    <label class="form-check-label">@hobby</label>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label for="Skills" class="col-sm-2 col-form-label">Skills</label>
+        <div class="col-sm-10">
+            <select asp-for="Skills" class="form-control" multiple>
+                @foreach(var skill in ViewBag.Skills as List<string>)
+                {
+                    <option value="@skill">@skill</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+                <input id="TermsAndConditions" name="TermsAndConditions" type="checkbox" class="form-check-input" />
+                <label for="TermsAndConditions" class="form-check-label">I agree to the terms and conditions</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row mb-4">
+        <div class="col-sm-10 offset-sm-2">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </div>
+</form>

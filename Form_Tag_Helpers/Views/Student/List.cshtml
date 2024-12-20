@@ -1,0 +1,28 @@
+@model List<Student>
+
+@{
+    ViewData["Title"] = "Student Lists";
+}
+<h2>Student List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Branch</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var Student in Model){
+            <tr>
+                <td>@Student.Name</td>
+                <td>@Student.DateOfBirth.ToShortDateString()</td>
+                <td>@Student.Branch</td>
+                <td>
+                    <a asp-controller="Student" asp-action="Details" asp-controller="Home" asp-route-id="@Student.StudentId" class="btn btn-primary">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
