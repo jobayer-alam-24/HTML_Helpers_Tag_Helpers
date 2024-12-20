@@ -1,0 +1,29 @@
+﻿@model List<Student>
+@{
+    ViewData["Title"] = "Student List";
+}
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>View</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var Student in Model){
+                <tr>
+                    <td>@Student.Id</td>
+                    <td>@Student.Name</td>
+                    <td>
+                        @* <a class="btn btn-primary" href="/Home/Details/@Student.Id">Details</a> *@
+                        @* <a class="btn btn-primary" asp-controller="Home" asp-action="Details" asp-route-id="@Student.Id">Details</a> *@
+                        @Html.ActionLink("Student Details", "Details", "Home", new { id = Student.Id }, new { @class = "btn btn-primary" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

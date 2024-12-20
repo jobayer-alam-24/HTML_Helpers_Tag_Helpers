@@ -1,0 +1,23 @@
+@model Student
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<div class="row m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>@Model.Name</h1>
+            </div>
+            <div class="card-body text-center">
+              <h4>Student ID: @Model.Id</h4>
+              <h4>Branch: @Model.Branch</h4>
+              <h4>Section: @Model.Section</h4>
+              <h4>Gender: @Model.Gender</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-action="Index" asp-asp-controller="Home" class="btn btn-primary">Back To Home</a>
+            </div>
+        </div>
+    </div>
+</div>
