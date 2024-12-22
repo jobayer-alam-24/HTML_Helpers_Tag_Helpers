@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Custom_Tag_Helper_Create.props" />
+</Project>

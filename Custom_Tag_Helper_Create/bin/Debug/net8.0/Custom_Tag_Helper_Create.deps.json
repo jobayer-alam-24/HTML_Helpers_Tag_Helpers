@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Custom_Tag_Helper_Create/1.0.0": {
+        "runtime": {
+          "Custom_Tag_Helper_Create.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Custom_Tag_Helper_Create/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
