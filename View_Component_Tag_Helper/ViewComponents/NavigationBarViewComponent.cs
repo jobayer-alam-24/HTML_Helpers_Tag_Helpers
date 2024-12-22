@@ -14,7 +14,7 @@ namespace View_Component_Tag_Helper.ViewComponents
             var menuItems = new List<MenuItem>
             {
                 new MenuItem { Text = "Home", Action = "Index", Controller = "Home" },
-                new MenuItem { Text = "Cart", Action = "Cart", Controller = "Home" },
+                new MenuItem { Text = "AddToCart", Action = "AddToCart", Controller = "Home" },
                 new MenuItem { Text = "Contact", Action = "Contact", Controller = "Home" }
             };
             return View(menuItems);
